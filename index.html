@@ -95,32 +95,64 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+ <!-- Portfolio Section -->
 <section id="portfolio" class="py-5">
   <div class="container text-center">
     <h2>RYNYARD Portfolio</h2>
     <div class="row mt-4">
+      
+      <!-- Portfolio Item 1 -->
       <div class="col-md-4 mb-3">
-        <img src="images/project1.jpg" class="img-fluid rounded shadow" alt="Portfolio 1">
+        <a href="https://www.behance.net/brittomsn" target="_blank">
+          <img src="images/portfolio1.png" class="img-fluid rounded shadow" alt="Portfolio 1">
+        </a>
       </div>
+
+      <!-- Portfolio Item 2 -->
       <div class="col-md-4 mb-3">
-        <img src="images/project2.jpg" class="img-fluid rounded shadow" alt="Portfolio 2">
+        <a href="https://www.behance.net/brittomsn" target="_blank">
+          <img src="images/portfolio2.png" class="img-fluid rounded shadow" alt="Portfolio 2">
+        </a>
       </div>
+
+      <!-- Portfolio Item 3 -->
       <div class="col-md-4 mb-3">
-        <img src="images/project3.jpg" class="img-fluid rounded shadow" alt="Portfolio 3">
+        <a href="https://www.behance.net/brittomsn" target="_blank">
+          <img src="images/portfolio3.png" class="img-fluid rounded shadow" alt="Portfolio 3">
+        </a>
       </div>
+
     </div>
 
-    <!-- More Link -->
-    <div class="mt-3">
+    <!-- More Button -->
+    <div class="mt-4 d-flex justify-content-center">
       <a href="https://www.behance.net/brittomsn" 
          target="_blank" 
-         class="text-danger fw-bold text-decoration-none more-link">
+         class="btn btn-danger fw-bold more-btn">
         more
       </a>
     </div>
   </div>
 </section>
+
+<!-- CSS -->
+<style>
+  .more-btn {
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .more-btn:hover {
+    text-decoration: underline;
+  }
+  /* Optional: Add hover effect on portfolio images */
+  #portfolio img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #portfolio img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  }
+</style>
 
 <!-- CSS -->
 <style>
@@ -193,6 +225,7 @@
   </script>
 </body>
 </html>
+
 
 
 

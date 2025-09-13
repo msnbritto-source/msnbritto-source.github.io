@@ -134,9 +134,23 @@
     </div>
   </section>
 
-  <!-- Contact -->
+<!-- Contact -->
 <section id="contact" class="py-5 bg-light">
   <div class="container text-center">
+    <h2>Contact RYNYARD</h2>
+
+    <!-- Success/Error message -->
+    <div id="form-message" class="alert d-none mt-3"></div>
+
+    <!-- Contact Form -->
+    <form id="contact-form" action="https://formspree.io/f/xeoldvaw" method="POST" class="mt-4">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
         <div class="col-12">
           <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
         </div>
@@ -180,6 +194,7 @@
   </script>
 </body>
 </html>
+
 
 
 

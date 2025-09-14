@@ -1,20 +1,27 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
         heading: ["Poppins", "sans-serif"],
-        mono: ["Fira Code", "monospace"],
+        body: ["Inter", "sans-serif"],
       },
       colors: {
-        primary: "#1E40AF", // Navy blue
-        accent: "#F59E0B",  // Amber
-        dark: "#111827",   // Dark gray
-        light: "#F9FAFB",  // Light gray
+        primary: {
+          500: "#7C3AED", // violet purple
+          600: "#6D28D9",
+          700: "#5B21B6",
+        },
+        dark: "#0F0F1A",
+      },
+      backgroundImage: {
+        "hero-gradient": "linear-gradient(to bottom, #1E0B3D, #0F0F1A)",
       },
     },
   },
   plugins: [],
-}
+};

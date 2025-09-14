@@ -1,21 +1,23 @@
-import Navbar from "./components/Navbar";
+// src/App.jsx
+import React from "react";
+import Navbar from "./Navbar";   // ✅ Import the Navbar
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Navbar />   {/* ✅ Navbar will appear at top */}
+    <div className="bg-gradient-to-b from-gray-900 to-black min-h-screen text-white">
+      {/* ✅ Navbar is now rendered */}
+      <Navbar />
 
+      {/* Hero Section */}
       <section
         id="home"
-        className="min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-gray-900 to-black text-white"
+        className="flex flex-col items-center justify-center min-h-screen text-center"
       >
-        <h1 className="text-5xl font-bold">Rynyard's Portfolio</h1>
-        <p className="mt-4 text-lg text-gray-300">
+        <h1 className="text-5xl font-bold mb-4">Rynyard's Portfolio</h1>
+        <p className="text-lg text-gray-300">
           Creative Developer & Designer bringing ideas to life with motion and design.
         </p>
       </section>
-    </>
+    </div>
   );
 }
-
-export default App;

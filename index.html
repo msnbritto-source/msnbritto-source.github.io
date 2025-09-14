@@ -6,12 +6,116 @@
     <title>Rynyard | Portfolio</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind CSS -->
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="font-sans bg-light text-dark">
-    <!-- Your website content -->
+    <!-- ✅ Header -->
+    <header class="bg-primary text-white shadow-lg">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 class="font-heading text-2xl">Rynyard</h1>
+        <nav>
+          <ul class="flex space-x-6 text-lg">
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ✅ Hero Section -->
+    <section
+      id="home"
+      class="max-w-6xl mx-auto text-center py-20 px-4"
+    >
+      <h2 class="text-4xl md:text-5xl font-heading text-primary mb-6">
+        Hello, I’m Rynyard 👋
+      </h2>
+      <p class="text-lg text-dark mb-8">
+        Freelance Web Designer & Developer.  
+        I create professional, modern websites with clean UI and responsive layouts.
+      </p>
+      <a
+        href="#portfolio"
+        class="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-dark transition"
+      >
+        View My Work
+      </a>
+    </section>
+
+    <!-- ✅ About Section -->
+    <section id="about" class="max-w-6xl mx-auto py-20 px-4">
+      <h3 class="text-3xl font-heading text-primary mb-6">About Me</h3>
+      <p class="text-lg leading-relaxed">
+        I specialize in building websites that are fast, responsive, and visually appealing.  
+        With experience in **HTML, CSS, JavaScript, and modern frameworks**, I help businesses
+        bring their ideas online with creative design and functionality.
+      </p>
+    </section>
+
+    <!-- ✅ Portfolio Section -->
+    <section id="portfolio" class="max-w-6xl mx-auto py-20 px-4">
+      <h3 class="text-3xl font-heading text-primary mb-6">Portfolio</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+          <img src="./assets/project1.jpg" alt="Project 1" />
+          <div class="p-4">
+            <h4 class="font-heading text-xl">Project One</h4>
+            <p class="text-sm">Short description of project.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+          <img src="./assets/project2.jpg" alt="Project 2" />
+          <div class="p-4">
+            <h4 class="font-heading text-xl">Project Two</h4>
+            <p class="text-sm">Short description of project.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+          <img src="./assets/project3.jpg" alt="Project 3" />
+          <div class="p-4">
+            <h4 class="font-heading text-xl">Project Three</h4>
+            <p class="text-sm">Short description of project.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Button -->
+      <div class="text-center mt-10">
+        <a
+          href="https://www.behance.net/brittomsn"
+          target="_blank"
+          class="font-heading text-primary text-lg hover:underline"
+        >
+          See More on Behance →
+        </a>
+      </div>
+    </section>
+
+    <!-- ✅ Contact Section -->
+    <section id="contact" class="max-w-6xl mx-auto py-20 px-4">
+      <h3 class="text-3xl font-heading text-primary mb-6">Contact</h3>
+      <p class="mb-4">Let’s work together! Reach me at:</p>
+      <a
+        href="mailto:your-email@example.com"
+        class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-dark transition"
+      >
+        Email Me
+      </a>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-dark text-white py-6 mt-10">
+      <div class="max-w-6xl mx-auto text-center text-sm">
+        © 2025 Rynyard. All Rights Reserved.
+      </div>
+    </footer>
   </body>
 </html>
